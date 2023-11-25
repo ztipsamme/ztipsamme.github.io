@@ -12,11 +12,14 @@ import { IMAGES } from '../../assets/images/images'
 
 const Start = () => {
   const { isMobile } = useContext(BreakpointContext)
-
   return (
     <>
-      <Section id="hero">
-        <div className="hero-image"></div>
+      <Section id="hero" className="auto-rows-min">
+        <img
+          src={IMAGES.cupOfTea}
+          alt=""
+          className="h-screen w-full md:h-[500px] col-start-fullbleed  md:col-start-half col-end-fullbleed row-start-1 md:rounded-s-8xl object-cover"
+        />
         <div className="hero-text">
           <div className={`p-8 rounded-3xl ${isMobile && 'glass shadow'}`}>
             <h1 aria-label="Start"></h1>
