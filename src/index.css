@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-secondary text-fontblack;
+}
+
+.button {
+  @apply font-bold border-2 border-fontblack rounded-full p-6 min-w-fit max-w-full;
+}
+
+.card {
+  @apply gap-4 auto-rows-min;
+  grid-template-rows: minmax(auto, max-content) 1fr;
+  > p {
+    @apply md:row-start-2 md:row-span-2 md:line-clamp-5 lg:md:row-span-1 h-min;
+  }
+
+  .card-img {
+    @apply object-cover rounded-3xl md:col-start-1 md:row-start-1 md:row-span-2 lg:row-span-3;
+  }
+
+  .card-btns {
+    @apply mt-4 md:mt-0 md:col-span-2 lg:col-span-1;
+  }
+
+  @apply md:grid md:grid-cols-2;
+
+  &:nth-of-type(even) {
+    .card-img-right {
+      @apply md:col-start-2;
+    }
+    > h2,
+    h3 {
+      @apply md:row-start-1;
+    }
+  }
+}
+
+.icon {
+  @apply h-12 aspect-square;
+}
+
+.has-submenu {
+  > ul {
+    @apply md:hidden;
+  }
+  &:hover ul {
+    @apply md:block;
+    transition: ;
+  }
+}
+
+.section-header {
+  @apply text-sectionHeader mb-8;
+}
+
+#desk-setup-img {
+  object-position: 0 20%;
+}
+
+.nav-link {
+  @apply py-2 inline-block font-bold;
+  &:hover > a,
+  &:hover > button,
+  &:focus > a,
+  &:focus > a {
+    @apply transform scale-105;
+  }
+}
+
+.btn {
+  @apply rounded-full p-2 shadow-md;
+  &.btn-primary {
+    @apply bg-primary text-fontwhite;
+  }
+  &.btn-outline-primary {
+    @apply border-2 border-primary text-primary;
+  }
+  &.btn-black {
+    @apply bg-fontblack text-fontwhite;
+  }
+  &.btn-outline-black {
+    @apply border-2 border-fontblack text-fontblack;
+  }
+  &.btn-fontwhite {
+    @apply bg-fontwhite text-primary;
+  }
+  &.btn-outline-fontwhite {
+    @apply border-2 border-fontwhite text-fontwhite;
+  }
+  &:hover {
+    @apply transform scale-105;
+  }
+}
+
+.glass {
+  @apply bg-fontwhite/50 backdrop-blur-sm;
+}
+
+#hero {
+  @apply py-0 md:py-24;
+  .hero-text {
+    @apply row-start-1 h-screen md:h-auto flex flex-col justify-center md:static col-start-bleed col-end-bleed md:col-end-half md:row-start-auto;
+  }
+  .hero-image {
+    @apply bg-[url('src/assets/images/cup-of-tea.jpg')] bg-cover bg-center w-screen h-screen md:static md:w-auto md:h-auto md:rounded-s-8xl col-start-fullbleed md:col-start-half col-end-fullbleed row-start-1;
+  }
+}
+
+.content {
+  > * {
+    @apply col-mobile md:col-content;
+  }
+}
+
+#contact {
+  > *:nth-child(-n + 3) {
+    @apply md:col-start-content md:col-span-3;
+  }
+  > *:nth-last-child(-n + 2) {
+    @apply md:col-start-half md:col-span-3;
+  }
+}
