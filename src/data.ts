@@ -16,40 +16,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { IMAGES } from './assets/images/images'
 
-export const quotes = [
-  {
-    name: 'Jon Kristensson',
-    title: 'Teacher at IT-Högskolan in Gothenburg',
-    text: '      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci dicta, ratione libero veritatis, earum neque accusamus consequatur quaerat enim necessitatibus, commodi maiores nulla soluta. Enim sequi voluptates neque, sapiente tempore, recusandae tenetur perferendis voluptatibus qui soluta aliquam sed cupiditate. Ipsam quas dolore praesentium, aperiam voluptate a est alias hic?',
-  },
-  {
-    name: 'Victor Longon',
-    title: 'Frontend developer at Polestar Digital',
-    text: '      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci dicta, ratione libero veritatis, earum neque accusamus consequatur quaerat enim necessitatibus, commodi maiores nulla soluta. Enim sequi voluptates neque, sapiente tempore, recusandae tenetur perferendis voluptatibus qui soluta aliquam sed cupiditate. Ipsam quas dolore praesentium, aperiam voluptate a est alias hic?',
-  },
-  {
-    name: 'Fredrik eller Kristoffer',
-    title: 'UX/UI student at IT-Högskolan in Gothenburg (2022-2024)',
-    text: '      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci dicta, ratione libero veritatis, earum neque accusamus consequatur quaerat enim necessitatibus, commodi maiores nulla soluta. Enim sequi voluptates neque, sapiente tempore, recusandae tenetur perferendis voluptatibus qui soluta aliquam sed cupiditate. Ipsam quas dolore praesentium, aperiam voluptate a est alias hic?',
-  },
-  {
-    name: 'Carl Adrian',
-    title:
-      'Frontend Developer student at IT-Högskolan in Gothenburg (2022-2024)',
-    text: '      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci dicta, ratione libero veritatis, earum neque accusamus consequatur quaerat enim necessitatibus, commodi maiores nulla soluta. Enim sequi voluptates neque, sapiente tempore, recusandae tenetur perferendis voluptatibus qui soluta aliquam sed cupiditate. Ipsam quas dolore praesentium, aperiam voluptate a est alias hic?',
-  },
-  {
-    name: 'Petra Möller',
-    title: 'Pool Lifeguard at Stenungsund Arena',
-    text: '      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci dicta, ratione libero veritatis, earum neque accusamus consequatur quaerat enim necessitatibus, commodi maiores nulla soluta. Enim sequi voluptates neque, sapiente tempore, recusandae tenetur perferendis voluptatibus qui soluta aliquam sed cupiditate. Ipsam quas dolore praesentium, aperiam voluptate a est alias hic?',
-  },
-]
-
 export const projects = [
   {
     name: 'RocketFlow',
-    description: `A fullstack productivity To Do-app that’s a mixture of the well known time maningen method Pomodoro and project management tool Kanban. 
-    Co-built with one of classmates and designed by a team of four, same year UX/UI students that also took tunes being our SCRUM-masters during the project.`,
+    description: `A fullstack productivity To Do-app that's a mixture of the well known time maningen method Pomodoro and project management tool Kanban. 
+    Co-built with one of my classmates and designed by a team of four, same year UX/UI students that also took turns being our SCRUM-masters during the project.`,
     tools: ['react.js', 'figma', 'sql', 'mongoose', 'node.js', 'git', 'github'],
     type: 'school project',
     goal: 'Build a fullstack application using the framework react.js whilst working in an agile team together with UX/UI students.',
@@ -59,7 +30,7 @@ export const projects = [
   },
   {
     name: 'Jontastic Slots',
-    description: `A frontend only, online slots-machine game with a store for in-game purchases with an in-game currency that can only be earned by playing the game. Co-built with four classmates using the build tool Vite.js and framework Vue.js.`,
+    description: `A frontend only, online slots-machine game with a store for in-game purchases and an in-game currency that can only be earned by playing the game. Co-built with four classmates using the build tool Vite.js and framework Vue.js.`,
     tools: [
       'vue.js',
       'css',
