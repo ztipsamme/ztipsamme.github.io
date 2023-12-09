@@ -16,6 +16,21 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { IMAGES } from './assets/images/images'
 
+export const Author = [
+  {
+    surname: 'Emma',
+    lastname: 'Spitz',
+    birthday: '1997-12-08',
+    age: function () {
+      return Math.floor(
+        Math.abs(Date.now() - new Date(this.birthday).getTime()) /
+          (1000 * 3600 * 24) /
+          365.25
+      )
+    },
+  },
+]
+
 export const projects = [
   {
     name: 'RocketFlow',
@@ -80,7 +95,7 @@ export const projects = [
 export const aboutme = [
   {
     title: ' Who am I?',
-    text: `I'm a 25 year old frontend developer student based in Bohuslän,
+    text: `I'm a ${Author[0].age()} year old frontend developer student based in Bohuslän,
     Sweden. At this point in time I'm in the third semester of my 2
     year long studies at IT-Högskolan in Gothenburg. Outside of school
     my hobbies are playing The Sims 4, practice coding and to
