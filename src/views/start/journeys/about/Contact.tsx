@@ -22,7 +22,7 @@ const links = [
 const Contact = () => {
   return (
     <Section id="contact" className="content">
-      <h2 className="section-header text-primary">Contact</h2>
+      <h2 className="section-header text-orange">Contact</h2>
       <h3 className="text-h1">Let's talk</h3>
       <address className="not-italic	">
         <ul className="text-h2">
@@ -30,7 +30,7 @@ const Contact = () => {
             <a href="mailto:e.spitz@hotmail.com" className="py-3">
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="mr-4 w-8 text-primary"
+                className="mr-4 w-8 text-orange"
               />
               e.spitz@hotmail.com
             </a>
@@ -40,7 +40,7 @@ const Contact = () => {
               <FontAwesomeIcon
                 icon={links[2].icon}
                 aria-hidden
-                className="mr-4 w-8 text-primary"
+                className="mr-4 w-8 text-orange"
               />
               {links[2].label}
             </Link>
@@ -58,7 +58,7 @@ const Contact = () => {
                     <FontAwesomeIcon
                       icon={link.icon}
                       aria-hidden
-                      className="mr-4 w-8 text-primary"
+                      className="mr-4 w-8 text-orange"
                     />
                     {link.label}
                   </Link>

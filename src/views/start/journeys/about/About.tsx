@@ -4,9 +4,9 @@ import { aboutme, stack } from '../../../../data'
 
 const About = () => {
   return (
-    <section className="bg-tertiary">
+    <section className="bg-peach dark:bg-beige dark:text-black">
       <Section id="about" className="content">
-        <h2 className="section-header text-fontwhite">About</h2>
+        <h2 className="section-header text-white dark:text-orange">About</h2>
         {aboutme.map((text) => (
           <article key={text.title} className={`card mb-8`}>
             <img
@@ -22,7 +22,7 @@ const About = () => {
       <Section
         aria-label="My development stack"
         id="stack"
-        className="bg-primary text-fontwhite full-bleed content"
+        className="bg-orange text-white full-bleed content"
       >
         <h2 className="section-header bleed">Stack</h2>
         <h3 className="text-h1 bleed mb-4">My Stack</h3>

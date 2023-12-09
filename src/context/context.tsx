@@ -4,7 +4,7 @@ type TBreakpointContext = {
   isMobile: boolean
   isSubMenuOpen: boolean
   toggleIsMobile?: () => void
-  toggleSubMenu?: () => void
+  toggleSubMenu?: (state?: boolean) => void
 }
 
 type TBreakpointContextProvider = {
@@ -22,12 +22,8 @@ export const BreakpointContextProvider = (
   const [isMobile, setIsMobile] = useState(false)
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
 
-  const toggleSubMenu = () => {
-    if (isSubMenuOpen) {
-      setIsSubMenuOpen(false)
-    } else {
-      setIsSubMenuOpen(true)
-    }
+  const toggleSubMenu = (state?: boolean) => {
+    setIsSubMenuOpen(state !== undefined ? state : !isSubMenuOpen)
   }
 
   const toggleIsMobile = () => {
@@ -51,7 +47,11 @@ export const BreakpointContextProvider = (
 
   return (
     <BreakpointContext.Provider
-      value={{ isMobile, isSubMenuOpen, toggleSubMenu: toggleSubMenu }}
+      value={{
+        isMobile,
+        isSubMenuOpen,
+        toggleSubMenu: toggleSubMenu,
+      }}
     >
       {props.children}
     </BreakpointContext.Provider>

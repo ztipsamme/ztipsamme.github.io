@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <Section id="projects" className="content">
-      <h2 className="section-header text-primary">Projects</h2>
+      <h2 className="section-header text-orange">Projects</h2>
       <h3 className="text-h1 mb-8">Selected projects</h3>
       <ul className="">
         {projects.map(
@@ -29,7 +29,7 @@ const Projects = () => {
                     <a
                       href={project.repo}
                       target="_blank"
-                      className="border-primary border-2 rounded-full px-6 py-3 text-primary font-bold shadow"
+                      className="border-orange border-2 rounded-full px-6 py-3 text-orange font-bold shadow"
                     >
                       GitHub Repo
                     </a>
@@ -38,7 +38,7 @@ const Projects = () => {
                     <a
                       href={project.demo}
                       target="_blank"
-                      className="border-primary border-2 rounded-full px-6 py-3 text-primary font-bold shadow"
+                      className="border-orange border-2 rounded-full px-6 py-3 text-orange font-bold shadow"
                     >
                       Link to demo
                     </a>

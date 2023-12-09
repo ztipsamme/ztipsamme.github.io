@@ -10,6 +10,8 @@ import { BreakpointContext } from '../../context/context'
 import { IMAGES } from '../../assets/images/images'
 // // import deskSetup from '../assets/desk-setup.jpg'
 
+const ctaBTN = `btn btn-lg btn-outline-white md:!border-black! md:text-black dark:border-white w-full shadow-lg`
+
 const Start = () => {
   const { isMobile } = useContext(BreakpointContext)
   return (
@@ -24,7 +26,7 @@ const Start = () => {
           <div className={`p-8 rounded-3xl ${isMobile && 'glass shadow'}`}>
             <h1 aria-label="Start"></h1>
             <p className="text-h1">Hi, I'm Emma, a</p>
-            <h2 className="text-hero capitalize text-primary">
+            <h2 className="text-hero capitalize text-orange">
               Frontend developer
             </h2>
             <p className="text-h1">based in Bohuslän, Sweden.</p>
@@ -51,18 +53,10 @@ const Start = () => {
               </Link>
             </span>
             <span className="flex flex-wrap lg:flex-nowrap gap-x-8 gap-y-2 mt-8">
-              <HashLink
-                to={'#projects'}
-                className="button w-full shadow-lg"
-                smooth
-              >
+              <HashLink to={'#projects'} className={ctaBTN} smooth>
                 Check out projects
               </HashLink>
-              <HashLink
-                to={'#contact'}
-                className="button w-full shadow-lg"
-                smooth
-              >
+              <HashLink to={'#contact'} className={ctaBTN} smooth>
                 Let's chat
               </HashLink>
             </span>

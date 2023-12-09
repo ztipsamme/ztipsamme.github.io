@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-secondary text-fontblack;
-}
-
-.button {
-  @apply font-bold border-2 border-fontblack rounded-full p-6 min-w-fit max-w-full;
+  @apply bg-spring text-black dark:bg-pine dark:text-white;
 }
 
 .card {
@@ -48,7 +44,6 @@ body {
   }
   &:hover ul {
     @apply md:block;
-    transition: ;
   }
 }
 
@@ -71,24 +66,27 @@ body {
 }
 
 .btn {
-  @apply rounded-full p-2 shadow-md;
-  &.btn-primary {
-    @apply bg-primary text-fontwhite;
+  &.btn-lg {
+    @apply font-bold border-2 p-6 min-w-fit max-w-full;
   }
-  &.btn-outline-primary {
-    @apply border-2 border-primary text-primary;
+  @apply rounded-full p-2 shadow-md;
+  &.btn-orange {
+    @apply bg-orange text-white;
+  }
+  &.btn-outline-orange {
+    @apply border-2 border-orange text-orange;
   }
   &.btn-black {
-    @apply bg-fontblack text-fontwhite;
+    @apply bg-black text-white;
   }
   &.btn-outline-black {
-    @apply border-2 border-fontblack text-fontblack;
+    @apply border-2 border-black text-black;
   }
-  &.btn-fontwhite {
-    @apply bg-fontwhite text-primary;
+  &.btn-white {
+    @apply bg-white text-orange;
   }
-  &.btn-outline-fontwhite {
-    @apply border-2 border-fontwhite text-fontwhite;
+  &.btn-outline-white {
+    @apply border-2 border-white text-white;
   }
   &:hover {
     @apply transform scale-105;
@@ -96,7 +94,7 @@ body {
 }
 
 .glass {
-  @apply bg-fontwhite/50 backdrop-blur-sm;
+  @apply bg-peach/50 text-white backdrop-blur-sm dark:bg-pine/50;
 }
 
 #hero {
