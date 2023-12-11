@@ -59,7 +59,7 @@ export const projects = [
     type: 'school project',
     goal: 'Build a frontend using the framework vue.js whilst working in an agile team with only Frontend and Javascript students.',
     repo: 'https://github.com/ztipsamme/jontastic-slots',
-    demo: '',
+    demo: 'https://emmaspitz.se/jontastic-slots2/',
     img: IMAGES.jontasticSlots,
   },
   {
