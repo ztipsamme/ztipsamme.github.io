@@ -10,7 +10,7 @@ import { BreakpointContext } from '../../context/context'
 import { IMAGES } from '../../assets/images/images'
 // // import deskSetup from '../assets/desk-setup.jpg'
 
-const ctaBTN = `btn btn-lg btn-outline-white md:!border-black! md:text-black dark:border-white w-full shadow-lg`
+const ctaBTN = `btn btn-lg w-full shadow-lg btn-outline-white md:btn-outline-black md:dark:btn-outline-white`
 
 const Start = () => {
   const { isMobile } = useContext(BreakpointContext)

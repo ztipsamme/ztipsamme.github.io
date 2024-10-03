@@ -65,31 +65,33 @@ body {
   }
 }
 
-.btn {
-  &.btn-lg {
-    @apply font-bold border-2 p-6 min-w-fit max-w-full;
-  }
-  @apply rounded-full p-2 shadow-md;
-  &.btn-orange {
-    @apply bg-orange text-white;
-  }
-  &.btn-outline-orange {
-    @apply border-2 border-orange text-orange;
-  }
-  &.btn-black {
-    @apply bg-black text-white;
-  }
-  &.btn-outline-black {
-    @apply border-2 border-black text-black;
-  }
-  &.btn-white {
-    @apply bg-white text-orange;
-  }
-  &.btn-outline-white {
-    @apply border-2 border-white text-white;
-  }
-  &:hover {
-    @apply transform scale-105;
+@layer utilities {
+  .btn {
+    &.btn-lg {
+      @apply font-bold border-2 p-6 min-w-fit max-w-full;
+    }
+    @apply rounded-full p-2 shadow-md;
+    &.btn-orange {
+      @apply bg-orange text-white;
+    }
+    &.btn-outline-orange {
+      @apply border-2 border-orange text-orange;
+    }
+    &.btn-black {
+      @apply bg-black text-white;
+    }
+    &.btn-outline-black {
+      @apply border-2 border-black text-black;
+    }
+    &.btn-white {
+      @apply bg-white text-orange;
+    }
+    &.btn-outline-white {
+      @apply border-2 border-white text-white;
+    }
+    &:hover {
+      @apply transform scale-105;
+    }
   }
 }
 
